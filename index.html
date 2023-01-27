@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Books</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-1">
+        <a href="#" class="logo"> <i class="fas fa-book"></i> E-Books</a>
+        <form action="" class="search-form">
+          <input
+            type="search"
+            name=""
+            placeholder="search here..."
+            id="search-box"
+          />
+          <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+        <div class="icons">
+          <div id="search-btn" class="fas fa-search"></div>
+          <a href="cart.php" class="fas fa-shopping-cart"></a>
+          <a href="login.php" id="login-btn" class="fas fa-user"></a>
+          <div id="chat-btn" class="fas fa-message"></div>
+        </div>
+      </div>
+      <div class="header-2">
+        <nav class="navbar">
+          <a href="#home">Accueil</a>
+          <a href="#featured">Populaires</a>
+          <a href="#arrivals">Nouveautés</a>
+          <a href="#reviews">Commentaires</a>
+          <a href="#blogs">blog</a>
+        </nav>
+      </div>
+    </header>
+
+    <nav class="bottom-navbar">
+      <a href="#home" class="fas fa-home"></a>
+      <a href="#featured" class="fas fa-list"></a>
+      <a href="#arrivals" class="fas fa-tags"></a>
+      <a href="#reviews" class="fas fa-comments"></a>
+      <a href="#blogs" class="fas fa-blog"></a>
+    </nav>
+
+    <!---   <div class="login-form-container">
+      <div id="close-login-btn" class="fas fa-times"></div>
+      <form action="" method="post">
+        <h3>Connexion</h3>
+
+        <span>Email</span>
+        <input
+          type="email"
+          name=""
+          placeholder="Entrer votre email"
+          class="box"
+        />
+
+        <span>Mot de passe</span>
+        <input
+          type="password"
+          name=""
+          placeholder="Entrer votre mot de passe"
+          class="box"
+        />
+
+        <div class="checkbox">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+        <input type="submit" value="Se connecter" class="btn" />
+        <p>Mot de passe oublié ? <a href="#">Clickez ici</a></p>
+        <p>
+          Vous n'avez pas de compte ? <a href="register.php">Créer un compte</a>
+        </p>
+      </form>
+    </div> -->
+
+    <section class="home" id="home">
+      <div class="row">
+        <div class="content">
+          <h3>jusqu'à 75 % de réduction</h3>
+          <p>
+            WOW, offres exceptionnelles sur E-Books. Profiter des réductions de
+            cette période hivernale. Jusqu’à 75% de réduction sur des livres
+            incroyables telles que Atomics Habbits, The Art City ou encore Your
+            Name.
+          </p>
+          <a href="#" class="btn">Achetez maintenant</a>
+        </div>
+
+        <div class="swiper books-slider">
+          <div class="swiper-wrapper">
+            <a href="#" class="swiper-slide"
+              ><img src="image/book-1.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/book-2.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/book-3.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/book-4.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/book-5.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/book-6.png" alt=""
+            /></a>
+            <a href="#" class="swiper-slide"
+              ><img src="image/book-11.png" alt=""
+            /></a>
+          </div>
+          <img src="image/stand.png" class="stand" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="icons-container">
+      <div class="icons">
+        <i class="fas fa-plane"></i>
+        <div class="content">
+          <h3>Livraison gratuite</h3>
+          <p>commande plus de 1000 DA</p>
+        </div>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-lock"></i>
+        <div class="content">
+          <h3>Paiement sécurisé</h3>
+          <p>100 Paiement sécurisé</p>
+        </div>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-redo-alt"></i>
+        <div class="content">
+          <h3>Retours faciles</h3>
+          <p>Retours sous 10 jours</p>
+        </div>
+      </div>
+
+      <div class="icons">
+        <i class="fas fa-headset"></i>
+        <div class="content">
+          <h3>Assistance 24h/24</h3>
+          <p>appelez-nous à tout moment</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="featured" id="featured">
+      <h1 class="heading"><span>Livres populaires</span></h1>
+      <div class="swiper featured-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/book-1.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>the art city</h3>
+              <div class="price">800 DA <span>1200 DA</span></div>
+              <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/book-2.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>give thanks in..</h3>
+              <div class="price">700 DA <span>1000 DA</span></div>
+              <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/book-3.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>your name</h3>
+              <div class="price">900 DA <span>1400 DA</span></div>
+              <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/book-4.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>your title goes here</h3>
+              <div class="price">600 DA <span>800 DA</span></div>
+              <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/book-5.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Music rock</h3>
+              <div class="price">400 DA <span>700 DA</span></div>
+              <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/book-6.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>sample text</h3>
+              <div class="price">500 DA <span>600 DA</span></div>
+              <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/book-7.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>sample text</h3>
+              <div class="price">500 DA <span>600 DA</span></div>
+              <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/book-8.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>black history month</h3>
+              <div class="price">700 DA <span>1100 DA</span></div>
+              <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/book-9.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Love</h3>
+              <div class="price">1500 DA <span>2000 DA</span></div>
+              <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="icons">
+              <a href="#" class="fas fa-search"></a>
+              <a href="#" class="fas fa-heart"></a>
+              <a href="#" class="fas fa-eye"></a>
+            </div>
+            <div class="image">
+              <img src="image/book-10.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>retro</h3>
+              <div class="price">800 DA <span>1000 DA</span></div>
+              <a href="#" class="btn">Ajouter au panier</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <form action="">
+        <h3>inscriver vous pour plus d'actualités</h3>
+        <input
+          type="email"
+          name=""
+          placeholder="entrez votre email"
+          class="box"
+        />
+        <input type="submit" value="s'inscrire" class="btn" />
+      </form>
+    </section>
+
+    <section class="arrivals" id="arrivals">
+      <h1 class="heading"><span>Nouveaux articles</span></h1>
+
+      <div class="swiper arrivals-slider">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/book-1.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>the art city</h3>
+              <div class="price">800 DA <span>1200 DA</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/book-2.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>give thanks in..</h3>
+              <div class="price">700 DA <span>1000 DA</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/book-3.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>your name</h3>
+              <div class="price">900 DA <span>1400 DA</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/book-4.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>your title goes here</h3>
+              <div class="price">600 DA <span>800 DA</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/book-5.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Music rock</h3>
+              <div class="price">400 DA <span>700 DA</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="swiper arrivals-slider">
+        <div class="swiper-wrapper">
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/book-6.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>sample text</h3>
+              <div class="price">500 DA <span>600 DA</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/book-7.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>sample text</h3>
+              <div class="price">500 DA <span>600 DA</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/book-8.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>black history month</h3>
+              <div class="price">700 DA <span>1100 DA</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/book-9.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>Love</h3>
+              <div class="price">1500 DA <span>2000 DA</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+
+          <a href="#" class="swiper-slide box">
+            <div class="image">
+              <img src="image/book-10.png" alt="" />
+            </div>
+            <div class="content">
+              <h3>retro</h3>
+              <div class="price">800 DA <span>1000 DA</span></div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="deal">
+      <div class="content">
+        <h3>Bon Plan</h3>
+        <h1>remise de -50%</h1>
+        <p>
+          Profiter d’une promotion exceptionnelle sur le livre ‘ Everyone Brave
+          is Forgiven’, un best-seller. -50% pendant une semaine valable du
+          12/01/2023 au 17/01/2023.
+        </p>
+        <a href="#" class="btn">Acheter</a>
+      </div>
+
+      <div class="image">
+        <img src="image/deal-img.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <h1 class="heading"><span>avis client</span></h1>
+
+      <div class="swiper reviews-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <img src="image/pic-1.png" alt="" />
+            <h3>Salim</h3>
+            <p>
+              Etant un passionné d’art, j’ai adoré le livre The art city, un
+              livre incroyable, passionnant et réfléchi. Et je le recommande
+              fortement pour tous les lecteurs.
+            </p>
+
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-2.png" alt="" />
+            <h3>Sarah</h3>
+            <p>
+              Black history mounth est un livre qui remet en question beaucoup
+              de choses. Il parle de la société et des relations entres les
+              gens. A lire absolument.
+            </p>
+
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-3.png" alt="" />
+            <h3>Mohamed</h3>
+            <p>
+              Atomics Habbits est un livre qui a changé ma vie et qui je suis
+              convaincu changera celle de beaucoup d’autres lecteurs dans
+              l’avenir. La vie, c’est des habitudes.
+            </p>
+
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-4.png" alt="" />
+            <h3>Fatima</h3>
+            <p>
+              Your name est un livre magnifique et en plus il est a bon prix sur
+              ce site par rapport au autres. Et le service client est
+              impeccable. Je recommande.
+            </p>
+
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-5.png" alt="" />
+            <h3>Hamid</h3>
+            <p>
+              Jamais 9rit ktab fi hyati, chrit LOVE bach nchouf. Legya wlh ma
+              yesla7. Ndemt ga3 li chritou, khssaret drahem. Ma nzidch ne9ra
+              ktab ga3.
+            </p>
+
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <img src="image/pic-6.png" alt="" />
+            <h3>Kim</h3>
+            <p>
+              J’ai acheté le livre Music Rock pour devenir une STAR de la K-POP.
+              Au lieu de ça le livre m’apprend le solfège. Moi je m’en fou du
+              solfège.
+            </p>
+
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blogs" id="blogs">
+      <h1 class="heading"><span>blog</span></h1>
+
+      <div class="swiper blogs-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/blog-1.jpg" alt="" />
+            </div>
+
+            <div class="content">
+              <h3>Remplir la Bibliothèque</h3>
+              <p>
+                Remplissez encore plus votre bibliothèque avec cet article de
+                blog.
+              </p>
+              <a href="#" class="btn">voir plus</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/blog-2.jpg" alt="" />
+            </div>
+
+            <div class="content">
+              <h3>Livres a réflexion</h3>
+              <p>
+                Envie de vous plonger dans vos pensée, alors cet article est la
+                pour vous aider.
+              </p>
+              <a href="#" class="btn">voir plus</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/blog-3.jpg" alt="" />
+            </div>
+
+            <div class="content">
+              <h3>Livres découvertes</h3>
+              <p>Ce blog vous fera voyager a travers des livres magnifiques.</p>
+              <a href="#" class="btn">voir plus</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/blog-4.jpg" alt="" />
+            </div>
+
+            <div class="content">
+              <h3>Débuter la lecture</h3>
+              <p>Cet article de blog est le meilleur pour commencer a lire.</p>
+              <a href="#" class="btn">voir plus</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide box">
+            <div class="image">
+              <img src="image/blog-5.jpg" alt="" />
+            </div>
+
+            <div class="content">
+              <h3>Livres chill</h3>
+              <p>Envie de vous détendre avec un livre, lisez cet article.</p>
+              <a href="#" class="btn">voir plus</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Nos emplacements</h3>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i>Algerie</a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i>France</a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i>USA</a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i>Tunisie</a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i>inde</a>
+          <a href="#"> <i class="fas fa-map-marker-alt"></i>russie</a>
+        </div>
+
+        <div class="box">
+          <h3>liens rapides</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i>Acceuil</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>Populaires</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>Nouveautés</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>Commentaires</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>blogs</a>
+        </div>
+
+        <div class="box">
+          <h3>autres</h3>
+          <a href="#"> <i class="fas fa-arrow-right"></i>Mon compte</a>
+          <a href="#"> <i class="fas fa-arrow-right"></i>Mes achats</a>
+          <a href="#">
+            <i class="fas fa-arrow-right"></i>politiques de confidentialités</a
+          >
+          <a href="#">
+            <i class="fas fa-arrow-right"></i>Méthodes de paiement</a
+          >
+          <a href="#"> <i class="fas fa-arrow-right"></i>Nos services</a>
+        </div>
+
+        <div class="box">
+          <h3>Nous contacter</h3>
+          <a href="#"> <i class="fas fa-phone"></i>+213-7890-456</a>
+          <a href="#"> <i class="fas fa-phone"></i>+213-444-5555</a>
+          <a href="#"> <i class="fas fa-envelope"></i>zou3ama_11@gmail.com</a>
+          <img src="image/worldmap.png" class="map" alt="" />
+        </div>
+      </div>
+
+      <div class="share">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <a href="#" class="fab fa-linkedin"></a>
+      </div>
+
+      <div class="credit">
+        created by <span>Mr. Belkessa Samy & Mr.Chikhi Mohamed Amine</span> |
+        all rights reserved
+      </div>
+    </section>
+
+    <div class="loader-container">
+      <img src="image/basicloader.gif" alt="" />
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="index.js"></script>
+  </body>
+</html>
